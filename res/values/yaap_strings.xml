@@ -766,4 +766,7 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_hidden">Hidden</string>
+
+    <string name="status_bar_4g_icon_title">4G icon</string>
+    <string name="status_bar_4g_icon_summary">Replace \'LTE\' icon with \'4G\'</string>
 </resources>

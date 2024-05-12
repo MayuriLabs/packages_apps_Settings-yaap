@@ -61,6 +61,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
     private static final String CLOCK_POSITION = "statusbar_clock_position";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
+    private static final String KEY_FOUR_G_ICON = "show_fourg_icon";
     private static final String BATTERY_STYLE = "status_bar_battery_style";
     private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String SHOW_BATTERY_PERCENT_CHARGING = "status_bar_show_battery_percent_charging";
@@ -71,6 +72,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private SystemSettingMasterSwitchPreference mNetTrafficState;
     private SystemSettingListPreference mClockPosition;
     private SystemSettingListPreference mStatusBarAmPm;
+    private SystemSettingSwitchPreference mFourgIcon;
     private SystemSettingListPreference mBatteryStyle;
     private SystemSettingSwitchPreference mBatteryPercent;
     private SystemSettingSwitchPreference mBatteryPercentCharging;
@@ -109,6 +111,8 @@ public class StatusBarSettings extends DashboardFragment implements
             mStatusBarAmPm.setEnabled(false);
             mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
         }
+
+        mFourgIcon = findPreference(KEY_FOUR_G_ICON);
 
         mBatteryPercent = findPreference(SHOW_BATTERY_PERCENT);
         final boolean percentEnabled = Settings.System.getIntForUser(resolver,
