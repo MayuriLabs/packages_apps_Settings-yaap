@@ -753,4 +753,11 @@
     <!-- High touch rate -->
     <string name="touch_rate_title">Increase touch polling rate</string>
     <string name="touch_rate_summary">Improves touch response by utilizing a higher polling rate</string>
+
+    <!-- Preference categories -->
+    <string name="experimental_category">Experimental</string>
+
+    <!-- Preference caregories -->
+    <string name="enable_window_blurs_title">Blur Effects</string>
+    <string name="enable_window_blurs_summary">Displays blur behind certain system interface elements</string>
 </resources>
